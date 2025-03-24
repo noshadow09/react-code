@@ -1,0 +1,33 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #333333;
+    --bg-dark: #333333;
+    --text-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme='light'] {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+body[data-theme='dark'] {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+} 
